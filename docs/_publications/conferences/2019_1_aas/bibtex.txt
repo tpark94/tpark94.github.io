@@ -1,0 +1,11 @@
+@inproceedings{park2019odnkrn,
+	author={Park, Tae Ha and Sharma, Sumant and D'Amico, Simone}, 
+	booktitle={2019 AAS/AIAA Astrodynamics Specialist Conference, Portland, Maine}, 
+	title={Towards Robust Learning-Based Pose Estimation of Noncooperative Spacecraft}, 
+	year={2019}, 
+	volume={}, 
+	number={}, 
+	pages={}, 
+	ISSN={}, 
+	month={August 11-15}
+}

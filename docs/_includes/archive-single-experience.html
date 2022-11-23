@@ -1,0 +1,30 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <div class="archive__item-big-teaser">
+      <img src="{{ post.teaser | prepend: base_path }}" alt="">
+    </div>
+
+    <div class="archive__item-big-info">
+      <!-- Company name in bold -->
+      <b>{{ post.company }}</b>
+
+      <!-- address -->
+      <span><i>{{ post.address }}</i></span><br>
+
+      <!-- Title -->
+      {{ post.title }}
+
+      <!-- Date -->
+      <span><i>{{ post.begin }} &#126; {{ post.end }}</i></span><br>
+
+      <!-- Other details -->
+      {{ post.misc }}
+
+      <br>
+    </div>
+
+  </article>
+</div>

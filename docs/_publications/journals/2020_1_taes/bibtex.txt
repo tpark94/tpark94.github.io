@@ -1,0 +1,9 @@
+@article{kisantal2020spec,
+	author={Kisantal, Mate and Sharma, Sumant and Park, Tae Ha and Izzo, Dario and M\"{a}rtens, Marcus and D'Amico, Simone},
+	journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+	title={Satellite Pose Estimation Challenge: Dataset, Competition Design and Results}, 
+	year={2020},
+	volume={56},
+	number={5},
+	pages={4083-4098}
+}

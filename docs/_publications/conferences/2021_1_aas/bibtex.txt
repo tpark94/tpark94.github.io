@@ -1,0 +1,11 @@
+@inproceedings{park2021tron,
+	author={Park, Tae Ha and Bosse, Juergen and D'Amico, Simone}, 
+	booktitle={2021 AAS/AIAA Astrodynamics Specialist Conference, Big Sky, Vitrual}, 
+	title={Robotic Testbed for Rendezvous and Optical Navigation: Multi-Source Calibration and Machine Learning Use Cases}, 
+	year={2021}, 
+	volume={}, 
+	number={}, 
+	pages={}, 
+	ISSN={}, 
+	month={August 9-11}
+}

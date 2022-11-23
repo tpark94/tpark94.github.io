@@ -1,0 +1,6 @@
+@article{park2022cnnukf,
+	title={Adaptive Neural Network-based Unscented Kalman Filter for Spacecraft Pose Tracking at Rendezvous},
+	author={Park, Tae Ha and D'Amico, Simone},
+	journal={arXiv preprint arXiv:2206.03796},
+	year={2022}
+}

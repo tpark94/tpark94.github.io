@@ -1,0 +1,71 @@
+{% include base_path %}
+
+{% if post.teaser %}
+  {% capture teaser %}{{ post.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <div class="archive__item-teaser">
+      <img src="{{ teaser | prepend: base_path }}" alt="">
+    </div>
+
+    <div class="archive__item-info">
+      <!-- Paper title in bold -->
+      <b>{{ post.title }}</b> <br>
+
+      <!-- Paper authors, my name in bold-->
+      {{ post.authors }} <br>
+
+      <!-- Paper venue + status -->
+      <i>{{ post.venue }}</i>
+      {% if post.status %}
+        {% case post.status %}
+          {% when "Submitted", "submitted" %}
+            <a href=""><img src="https://img.shields.io/badge/Submitted-red" /></a>
+          {% when "Accepted", "accepted" %}
+            <a href=""><img src="https://img.shields.io/badge/Accepted-blue" /></a>
+            {% when "Best Paper Award" %}
+            <a href=""><img src="https://img.shields.io/badge/Best_Paper_Award-success" /></a>
+        {% endcase %}
+      {% endif %} <br>
+
+      <!-- Links -->
+      {% if post.pdf %}
+        <a href="{{ post.pdf }}" target="_blank">[PDF]</a>
+      {% endif %}
+
+      {% if post.arxiv %}
+        <a href="{{ post.arxiv }}" target="_blank">[arXiv]</a>
+      {% endif %}
+
+      {% if post.link %}
+        <a href="{{ post.link }}" target="_blank">[link]</a>
+      {% endif %}
+
+      {% if post.github %}
+        <a href="{{ post.github }}" target="_blank">[GitHub]</a>
+      {% endif %}
+
+      <!-- Datasets only -->
+      {% if post.sdr %}
+        <a href="{{ post.sdr }}" target="_blank">[Stanford Digital Repository]</a>
+      {% endif %}
+
+      {% if post.zenodo %}
+        <a href="{{ post.zenodo }}" target="_blank">[Zenodo]</a>
+      {% endif %}
+      <!---->
+
+      {% if post.bibtex %}
+        <a href="{{ post.bibtex | prepend: base_path }}" target="_blank">[BibTeX]</a>
+      {% endif %}
+
+      <br>
+    </div>
+
+  </article>
+</div>
