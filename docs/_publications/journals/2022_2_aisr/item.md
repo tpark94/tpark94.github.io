@@ -9,7 +9,7 @@ authors: "<b>Tae Ha Park</b>, Simone D'Amico"
 venue: "Advances in Space Research (2022)"
 status: "Submitted"
 
-arxiv: "https://arxiv.org/abs/2206.03796"
+arxiv: "https://arxiv.org/abs/2203.04275"
 pdf:
 link:
 github: "https://github.com/tpark94/spnv2"
