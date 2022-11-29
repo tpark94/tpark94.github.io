@@ -1,0 +1,8 @@
+@misc{park2022shirt,
+	author={Park, Tae Ha and D'Amico, Simone},
+	title={SHIRT: Satellite Hardware-In-the-loop Rendezvous Trajectory Dataset},
+	howpublished={Stanford Digital Repository},
+	note={Available at \url{https://purl.stanford.edu/zq716br5462}},
+	doi={10.25740/zq716br5462},
+	year={2022}
+}

@@ -46,6 +46,10 @@
         <a href="{{ post.link }}" target="_blank">[link]</a>
       {% endif %}
 
+      {% if post.project %}
+        <a href="{{ post.project }}" target="_blank">[project]</a>
+      {% endif %}
+
       {% if post.github %}
         <a href="{{ post.github }}" target="_blank">[GitHub]</a>
       {% endif %}
