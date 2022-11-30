@@ -4,7 +4,7 @@ type: dataset
 
 teaser: "/publications/datasets/2022_1_shirt/teaser.jpg"
 
-title: "SHIRT: Satellite Hardware-In-the-loop Rendezvous Trajectory Dataset"
+title: "SHIRT: Satellite Hardware-In-the-loop Rendezvous Trajectories Dataset"
 authors: "<b>Tae Ha Park</b>, Simone D'Amico"
 venue: "Stanford Digital Repository (2022)"
 status:
