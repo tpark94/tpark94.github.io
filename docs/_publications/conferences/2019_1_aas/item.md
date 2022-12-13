@@ -12,6 +12,6 @@ status: "Best Paper Award"
 arxiv:
 pdf: "/files/papers/sharmaparkdamico_aas2019.pdf"
 link:
-bibtex: "/publications/conferences/2020_1_aas/bibtex.txt"
+bibtex: "/publications/conferences/2019_1_aas/bibtex.txt"
 
 ---

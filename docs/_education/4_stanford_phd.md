@@ -5,7 +5,7 @@ teaser: "/images/stanford_logo.jpg"
 
 school: "Stanford University"
 address: "Stanford, CA"
-begin: "September 2019"
+begin: "April 2018"
 end: "Current"
 degree: "Doctor of Philosophy (Ph.D) in Aeronautics &#38; Astronautics"
 

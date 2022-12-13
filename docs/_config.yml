@@ -12,8 +12,8 @@
 locale                   : "en-US"
 title                    : "Tae Ha \"Jeff\" Park"
 title_separator          : "-"
-name                     : &name "Tae Ha Park"
-description              : &description "personal description"
+name                     : &name "Tae Ha \"Jeff\" Park"
+description              : &description "Jeff's Personal Website"
 url                      : https://taehajeffpark.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tpark94/tpark94.github.io"
@@ -118,7 +118,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  curriculum-vitae : "/files/cv_taehapark_20221130.pdf"
+  curriculum-vitae : "/files/cv_taehapark_221211.pdf"
 
 
 # Reading Files
