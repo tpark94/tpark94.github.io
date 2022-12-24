@@ -10,9 +10,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tae Ha \"Jeff\" Park"
+title                    : "Tae Ha \\\"Jeff\\\" Park"
 title_separator          : "-"
-name                     : &name "Tae Ha \"Jeff\" Park"
+name                     : &name "Tae Ha \\\"Jeff\\\" Park"
 description              : &description "Jeff's Personal Website"
 url                      : https://taehajeffpark.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -83,7 +83,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tae Ha \"Jeff\" Park"
+  name             : "Tae Ha \\\"Jeff\\\" Park"
   avatar           : "profile.jpg"
   bio              : "PhD Candidate<br>Stanford University"
   location         : "Stanford CA"
