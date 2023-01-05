@@ -2,7 +2,7 @@
 collection: publications
 type: journal
 
-teaser: "/images/teaser.png"
+teaser: "/publications/journals/2022_1_acta/teaser.jpg"
 
 title: "Satellite Pose Estimation Competition 2021: Results and Analyses"
 authors: "<b>Tae Ha Park</b>, Marcus Märtens, Mohsi Jawaid, Zi Wang, Bo Chen, Tat-Jun Chin, Dario Izzo, Simone D'Amico"
