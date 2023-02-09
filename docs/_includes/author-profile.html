@@ -118,8 +118,11 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
-      {% if author.curriculum-vitae %}
-        <li><a href="{{ author.curriculum-vitae | prepend: base_path }}"><i class="fas fa-fw fa-file" aria-hidden="true"></i> Curriculum Vitae</a></li>
+      {% if author.curriculum-vitae_en %}
+        <li><a href="{{ author.curriculum-vitae_en | prepend: base_path }}"><i class="fas fa-fw fa-file" aria-hidden="true"></i> Curriculum Vitae (EN)</a></li>
+      {% endif %}
+      {% if author.curriculum-vitae_kr %}
+        <li><a href="{{ author.curriculum-vitae_kr | prepend: base_path }}"><i class="fas fa-fw fa-file" aria-hidden="true"></i> Curriculum Vitae (KR)</a></li>
       {% endif %}
     </ul>
   </div>
