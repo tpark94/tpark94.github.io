@@ -2,7 +2,7 @@
 collection: publications
 type: journal
 
-teaser: "/publications/journals/2023_2_aisr/teaser.jpg"
+teaser: "/publications/journals/2023_3_aisr/teaser.jpg"
 
 title: "Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap"
 authors: "<b>Tae Ha Park</b>, Simone D'Amico"
@@ -13,6 +13,6 @@ arxiv: "https://arxiv.org/abs/2203.04275"
 pdf:
 link:
 github: "https://github.com/tpark94/spnv2"
-bibtex: "/publications/journals/2023_2_aisr/bibtex.txt"
+bibtex: "/publications/journals/2023_3_aisr/bibtex.txt"
 
 ---
