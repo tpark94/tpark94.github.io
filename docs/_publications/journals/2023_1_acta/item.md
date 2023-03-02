@@ -12,6 +12,6 @@ status:
 arxiv:
 pdf:
 link: "https://www.sciencedirect.com/science/article/pii/S0094576523000048?via%3Dihub"
-bibtex:
+bibtex: "/publications/journals/2023_1_acta/bibtex.txt"
 
 ---
