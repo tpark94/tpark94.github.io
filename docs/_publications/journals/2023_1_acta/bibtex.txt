@@ -1,6 +1,6 @@
 @article{park2023spec2021,
 	title = {Satellite Pose Estimation Competition 2021: Results and Analyses},
-	author = {Park, Tae Ha and M\"{a}rtens, Marcus and Jawaid, Mohsi and Wang, Zi and Chen, Bo and Chin, Tat-Jun and Izzo, Dario and D’Amico, Simone}
+	author = {Park, Tae Ha and M\"{a}rtens, Marcus and Jawaid, Mohsi and Wang, Zi and Chen, Bo and Chin, Tat-Jun and Izzo, Dario and D’Amico, Simone},
 	journal = {Acta Astronautica},
 	volume = {204},
 	pages = {640-665},
