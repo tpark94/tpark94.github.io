@@ -9,7 +9,7 @@ authors: "Mate Kisantal, Sumant Sharma, <b>Tae Ha Park</b>, Dario Izzo, Marcus M
 venue: "IEEE Transactions on Aerospace and Electronic Systems (2020)"
 status:
 
-arxiv:
+arxiv: "https://arxiv.org/abs/1911.02050"
 pdf:
 link: "https://ieeexplore.ieee.org/document/9076337"
 bibtex: "/publications/journals/2020_1_taes/bibtex.txt"

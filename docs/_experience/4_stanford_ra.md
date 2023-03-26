@@ -7,7 +7,7 @@ company: "Space Rendezvous Laboratory (SLAB), Stanford University"
 address: "Stanford, CA"
 begin: "September 2019"
 end: "Current"
-title: "Research Assistant, Advisor: Dr. Simone D'Amico"
+title: "Research Assistant | Advisor: Dr. Simone D'Amico"
 
 misc: "<ul>
         <li>Developing robust deep learning models and GNC algorithms for vision-based rendezvous with known and unknown targets in space</li>

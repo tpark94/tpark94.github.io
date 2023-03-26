@@ -9,7 +9,7 @@ authors: "<b>Tae Ha Park</b>, Marcus Märtens, Gurvan Lecuyer, Dario Izzo, Simon
 venue: "IEEE Aerospace Conference, Big Sky, Montana, March 5-12 (2022)"
 status:
 
-arxiv:
+arxiv: "https://arxiv.org/abs/2110.03101"
 pdf:
 link: "https://ieeexplore.ieee.org/document/9843439"
 github: "https://github.com/tpark94/speedplusbaseline"
