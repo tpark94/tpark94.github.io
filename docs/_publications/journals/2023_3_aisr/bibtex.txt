@@ -1,6 +1,7 @@
-@article{park2022spnv2,
-	title={Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap},
-	author={Park, Tae Ha and D'Amico, Simone},
-	journal={arXiv preprint arXiv:2203.04275},
-	year={2022}
+@article{park2023spnv2,
+	title = {Robust multi-task learning and online refinement for spacecraft pose estimation across domain gap},
+	author = {Tae Ha Park and Simone D’Amico},
+	journal = {Advances in Space Research},
+	year = {2023},
+	doi = {10.1016/j.asr.2023.03.036},
 }

@@ -1,0 +1,7 @@
+@article{pasqualetto2023ukf,
+    title = {Leveraging neural network uncertainty in adaptive unscented Kalman Filter for spacecraft pose estimation},
+    author = {Pasqualetto Cassinis, Lorenzo and Park, Tae Ha and Stacey, Nathan and D’Amico, Simone and Menicucci, Alessandra and Gill, Eberhard and Ahrns, Ingo and Sanchez-Gestido, Manuel},
+    journal = {Advances in Space Research},
+    year = {2023},
+    doi = {10.1016/j.asr.2023.02.021},
+}
