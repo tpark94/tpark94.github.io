@@ -1,6 +1,7 @@
-@article{park2022cnnukf,
+@article{park2023spnukf,
 	title={Adaptive Neural Network-based Unscented Kalman Filter for Robust Pose Tracking of Noncooperative Spacecraft},
 	author={Park, Tae Ha and D'Amico, Simone},
-	journal={arXiv preprint arXiv:2206.03796},
-	year={2022}
+	journal={Journal of Guidance, Control, and Dynamics},
+	year={2023},
+	doi={10.2514/1.G007387}
 }
