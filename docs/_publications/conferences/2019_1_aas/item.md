@@ -10,7 +10,7 @@ venue: "2019 AAS/AIAA Astrodynamics Specialist Conference, Portland, Maine, Augu
 status: "Best Paper Award"
 
 arxiv:
-pdf: "/files/papers/sharmaparkdamico_aas2019.pdf"
+pdf: "/files/papers/parksharmadamico_aas2019.pdf"
 link:
 bibtex: "/publications/conferences/2019_1_aas/bibtex.txt"
 
