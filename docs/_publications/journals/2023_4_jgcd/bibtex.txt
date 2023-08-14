@@ -2,6 +2,9 @@
 	title={Adaptive Neural-Network-Based Unscented Kalman Filter for Robust Pose Tracking of Noncooperative Spacecraft},
 	author={Park, Tae Ha and D'Amico, Simone},
 	journal={Journal of Guidance, Control, and Dynamics},
+	volume={46},
+	number={9},
+	pages={1671--1688},
 	year={2023},
 	doi={10.2514/1.G007387}
 }
