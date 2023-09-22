@@ -1,0 +1,8 @@
+@misc{park_2023_ost,
+	title={Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering},
+	author={Park, Tae Ha and D'Amico, Simone},
+	year={2023},
+	eprint={2309.11645},
+	archivePrefix={arXiv},
+	primaryClass={cs.RO}
+}
