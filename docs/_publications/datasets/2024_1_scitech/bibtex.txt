@@ -1,0 +1,8 @@
+@misc{park_2024_sdr_spe3r,
+	author={Park, Tae Ha and D'Amico, Simone},
+	title={{SPE3R}: Synthetic Dataset for Satellite Pose Estimation and {3D} Reconstruction},
+	howpublished={Stanford Digital Repository},
+	note={Available at \url{https://purl.stanford.edu/pk719hm4806}},
+	doi={10.25740/pk719hm4806},
+	year={2024}
+}

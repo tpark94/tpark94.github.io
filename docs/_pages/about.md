@@ -12,4 +12,6 @@ I'm a PhD candidate advised by Dr. Simone D'Amico at the [Space Rendezvous Labor
 
 ## News
 
+**2024/01/05** $~~~$ Two new papers will be presented at this year's <a ref="https://www.aiaa.org/scitech">AIAA SciTech Forum</a>! See the Publication page for details.
+
 **2023/09/21** $~~~$ A new preprint is available on arXiv and accessible on the Publication page.
