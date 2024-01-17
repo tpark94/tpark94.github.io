@@ -12,6 +12,8 @@ I'm a PhD candidate advised by Dr. Simone D'Amico at the [Space Rendezvous Labor
 
 ## News
 
-**2024/01/05** $~~~$ Two new papers will be presented at this year's <a ref="https://www.aiaa.org/scitech">AIAA SciTech Forum</a>! See the Publication page for details.
+**2024/01/16** $~~~$ We are soliciting papers for the 3rd AI4Space Workshop @ CVPR 2024! See the workshop page [here](https://aiforspace.github.io/2024/).
+
+**2024/01/05** $~~~$ Two new papers will be presented at this year's [AIAA SciTech Forum](https://www.aiaa.org/scitech)! See the Publication page for details.
 
 **2023/09/21** $~~~$ A new preprint is available on arXiv and accessible on the Publication page.
