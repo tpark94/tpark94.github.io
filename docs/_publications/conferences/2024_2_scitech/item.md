@@ -12,7 +12,8 @@ status:
 arxiv:
 pdf:
 link: "https://arc.aiaa.org/doi/10.2514/6.2024-2768"
-github:
+correction: "https://arc.aiaa.org/doi/10.2514/6.2024-2768.c1"
+github: "https://github.com/tpark94/sat-sq-recon"
 bibtex: "/publications/conferences/2024_2_scitech/bibtex.txt"
 
 ---

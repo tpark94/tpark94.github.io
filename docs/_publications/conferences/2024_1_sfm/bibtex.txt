@@ -1,5 +1,5 @@
 @inbook{kruger_2024_scitech_arch,
-	author = {Justin J. Kruger and Tommaso Guffanti and Tae Ha Park and Mason Murray-Cooper and Samuel Y. Low and Toby Bell and Simone D'Amico and Christopher W. Roscoe and Jason Westphal},
+	author = {Justin Kruger and Tommaso Guffanti and Tae Ha Park and Mason Murray-Cooper and Samuel Y. Low and Toby Bell and Simone D'Amico and Christopher W. Roscoe and Jason Westphal},
 	title = {Adaptive End-to-End Architecture for Autonomous Spacecraft Navigation and Control During Rendezvous and Proximity Operations},
 	booktitle = {AIAA SCITECH 2024 Forum},
 	chapter = {},

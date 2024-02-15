@@ -1,5 +1,5 @@
 @inbook{park_2024_scitech_spe3r,
-	author = {Tae Ha Park and Simone D'Amico},
+	author = {Park, Tae Ha and D'Amico, Simone},
 	title = {Rapid Abstraction of Spacecraft {3D} Structure from Single {2D} Image},
 	booktitle = {AIAA SCITECH 2024 Forum},
 	chapter = {},
