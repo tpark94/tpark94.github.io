@@ -36,6 +36,10 @@
       {% endif %} <br>
 
       <!-- Links -->
+      {% if post.project %}
+        <a href="{{ post.project }}" target="_blank">[project]</a>
+      {% endif %}
+
       {% if post.pdf %}
         <a href="{{ post.pdf }}" target="_blank">[PDF]</a>
       {% endif %}
@@ -50,10 +54,6 @@
 
       {% if post.correction %}
         <a href="{{ post.correction }}" target="_blank">[correction]</a>
-      {% endif %}
-
-      {% if post.project %}
-        <a href="{{ post.project }}" target="_blank">[project]</a>
       {% endif %}
 
       {% if post.github %}
