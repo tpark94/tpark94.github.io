@@ -7,7 +7,7 @@ teaser: "/publications/conferences/2024_3_icra/teaser.jpg"
 title: "Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering"
 authors: "<b>Tae Ha Park</b>, Simone D'Amico"
 venue: "2024 IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan (2024)"
-status: "Accepted"
+status: https://img.shields.io/badge/Accepted-blue
 
 arxiv: "https://arxiv.org/abs/2309.11645"
 pdf:

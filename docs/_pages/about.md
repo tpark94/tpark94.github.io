@@ -12,8 +12,8 @@ I'm a PhD candidate advised by Dr. Simone D'Amico at the [Space Rendezvous Labor
 
 ## News
 
+**2024/04/21** $~~~$ Our paper [Satellite Pose Estimation Challenge: Dataset, Competition Design, and Results](https://ieeexplore.ieee.org/document/9076337), published in the October 2020 issue of the IEEE Transactions on Aerospace and Electronic Systems, received the [M. Barry Carlton Award](https://ieee-aess.org/awards/m-barry-carlton-award#description)!
+
 **2024/01/29** $~~~$ Our paper [Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering](https://arxiv.org/abs/2309.11645) has been accepted to [ICRA 2024](https://2024.ieee-icra.org)!
 
 **2024/01/16** $~~~$ We are soliciting papers for the 3rd AI4Space Workshop @ CVPR 2024! See the workshop page [here](https://aiforspace.github.io/2024/).
-
-**2024/01/05** $~~~$ Two new papers will be presented at this year's [AIAA SciTech Forum](https://www.aiaa.org/scitech)! See the Publication page for details.
