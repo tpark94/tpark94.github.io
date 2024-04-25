@@ -1,0 +1,11 @@
+@article{park2024spnv2,
+  title = {Robust multi-task learning and online refinement for spacecraft pose estimation across domain gap},
+  author = {Tae Ha Park and Simone D’Amico},
+  journal = {Advances in Space Research},
+  volume = {73},
+  number = {11},
+  pages = {5726--5740},
+  year = {2024},
+  note = {Recent Advances in Satellite Constellations and Formation Flying},
+  doi = {10.1016/j.asr.2023.03.036},
+}

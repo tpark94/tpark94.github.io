@@ -2,7 +2,7 @@
 collection: publications
 type: journal
 
-teaser: "/publications/journals/2023_4_jgcd/teaser.jpg"
+teaser: "/publications/journals/2023_3_jgcd/teaser.jpg"
 
 title: "Adaptive Neural-Network-Based Unscented Kalman Filter for Robust Pose Tracking of Noncooperative Spacecraft"
 authors: "<b>Tae Ha Park</b>, Simone D'Amico"
@@ -12,6 +12,6 @@ status:
 arxiv: "https://arxiv.org/abs/2206.03796"
 pdf:
 link: "https://arc.aiaa.org/doi/full/10.2514/1.G007387"
-bibtex: "/publications/journals/2023_4_jgcd/bibtex.txt"
+bibtex: "/publications/journals/2023_3_jgcd/bibtex.txt"
 
 ---
