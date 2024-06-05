@@ -38,3 +38,11 @@ author_profile: true
     {% include archive-single-publication.html %}
   {% endif %}
 {% endfor %}
+
+### Thesis
+
+{% for post in site.publications reversed %}
+  {% if post.type == "thesis" %}
+    {% include archive-single-publication.html %}
+  {% endif %}
+{% endfor %}

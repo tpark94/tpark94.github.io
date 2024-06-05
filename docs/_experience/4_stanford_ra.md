@@ -6,7 +6,7 @@ teaser: "/images/stanford_logo.jpg"
 company: "Space Rendezvous Laboratory (SLAB), Stanford University"
 address: "Stanford, CA"
 begin: "September 2019"
-end: "Current"
+end: "June 2024"
 title: "Research Assistant | Advisor: Dr. Simone D'Amico"
 
 misc: "<ul>

@@ -1,0 +1,9 @@
+@phdthesis {park_2024_phd,
+  author  = "Tae Ha Park",
+  title   = "Robust machine learning for vision-based navigation about non-cooperative resident space objects",
+  school  = "Stanford University",
+  year    = "2024",
+  address = "Department of Aeronautics \& Astronautics",
+  month   = "06",
+  howpublished = "\url{https://purl.stanford.edu/fk941fj3586}"
+}
