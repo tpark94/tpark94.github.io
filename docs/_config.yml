@@ -85,12 +85,12 @@ analytics:
 author:
   name             : "Tae Ha \"Jeff\" Park"
   avatar           : "profile.jpg"
-  bio              : "PhD Candidate<br>Stanford University"
-  location         : "Stanford CA"
+  bio              : "GN&C Research Engineer<br>NARA Space Technology"
+  location         : "Seoul, Korea"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=fh3q6N4AAAAJ&hl=en"
-  email            : "tpark94@stanford.edu"
+  email            : "thpark@naraspace.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -118,8 +118,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  curriculum-vitae_en : "/files/cv_taehapark_en_20240605.pdf"
-  curriculum-vitae_kr : "/files/cv_taehapark_kr_20240605.pdf"
+  curriculum-vitae_en : "/files/cv_taehapark_en_20240819.pdf"
+  curriculum-vitae_kr :
 
 
 # Reading Files

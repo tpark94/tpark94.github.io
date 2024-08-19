@@ -1,0 +1,7 @@
+@inproceedings{park_2024_gnc_speeduecube,
+	author = {Ahmed, Zahra and Park, Tae Ha and Bhattacharjee, Abhijit and Fazel-Rezai, Reza and Graves, Russell and Saarela, Ossi and Teramoto, Reece and Vemulapalli, Kautilya and D'Amico, Simone},
+	title = {SPEED-UE-Cube: A Machine Learning Dataset for Autonomous, Vision-Based Spacecraft Navigation},
+	booktitle = {46th Rocky Mountain AAS Guidance, Navigation and Control Conference, Breckenridge, Colorado},
+	month = {February 2--7},
+  year = {2024}
+}
