@@ -10,4 +10,3 @@ author_profile: true
 {% for post in site.education reversed %}
     {% include archive-single-education.html %}
 {% endfor %}
-

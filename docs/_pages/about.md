@@ -1,20 +1,19 @@
 ---
 permalink: /
-title:
-excerpt: "About me"
+title: "About me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I'm a GN&C research engineer at [NARA Space Technology](https://naraspace.com) in Seoul, South Korea.
+I'm a GN&C research engineer at [Nara Space Technology](https://naraspace.com) in Seoul, South Korea.
 
 Previously I did my Ph.D. at the [Space Rendezvous Laboratory (SLAB)](https://slab.stanford.edu) in the Department of Aeronautics & Astronautics at Stanford University advised by Dr. Simone D'Amico. There, my research covered the complete pipeline of machine learning development for spaceborne computer vision applications, from dataset generation and neural network design to on-ground validation and integration into GNC algorithms. Potential applications of my research include space situational awareness and logistics, such as active debris removal, inspection and refueling of defunct satellites.
 
 ## News
 
-**2024/07/15** $~~~$ I started working as a GNC research engineer at [NARA Space Technology](https://naraspace.com) in Seoul, South Korea.
+**2024/07/15** $~~~$ I started working as a GN&C research engineer at [Nara Space Technology](https://naraspace.com) in Seoul, South Korea.
 
 **2024/06/05** $~~~$ My Ph.D. thesis [Robust machine learning for vision-based navigation about non-cooperative resident space objects](https://purl.stanford.edu/fk941fj3586) is now available online!
 

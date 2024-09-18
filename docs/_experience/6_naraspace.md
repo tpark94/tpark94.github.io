@@ -3,7 +3,7 @@ collection: experience
 
 teaser: "/images/nst_logo.png"
 
-company: "NARA Space Technology Inc."
+company: "Nara Space Technology Inc."
 address: "Seoul, South Korea"
 begin: "July 2024"
 end: "Current"

@@ -7,13 +7,13 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- ### Preprints
+### Preprints
 
 {% for post in site.publications reversed %}
   {% if post.type == "preprint" %}
     {% include archive-single-publication.html %}
   {% endif %}
-{% endfor %} -->
+{% endfor %}
 
 ### Journal Articles
 

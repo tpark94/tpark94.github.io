@@ -3,12 +3,10 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-#
-#
-# Use `bundle exec jekyll serve` for offline test
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-# Site Settings
+# Basic Site Settings
 locale                   : "en-US"
 title                    : "Tae Ha \"Jeff\" Park"
 title_separator          : "-"
@@ -17,6 +15,76 @@ description              : &description "Jeff's Personal Website"
 url                      : "https://taehajeffpark.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tpark94/tpark94.github.io"
+
+# Site Author - The following control what appear as part of the author content on the side bar.
+#               If a field is blank the icon and link will not appear, otherwise it will be shown.
+#               Additional customization can be done by editing /_includes/author-profile.html
+author:
+  # Biographic information
+  avatar           : "profile.jpg"
+  name             : "Tae Ha \"Jeff\" Park"
+  pronouns         : # example: "she/her"
+  bio              : "GN&C Research Engineer<br>Nara Space Technology"
+  location         : "Seoul, Korea"
+  employer         :
+  uri              : # URL
+  email            : "thpark@naraspace.com"
+
+  # Academic websites
+  arxiv            : # URL - Update with the correct link to your profile
+  googlescholar    : "https://scholar.google.com/citations?user=fh3q6N4AAAAJ&hl=en"
+  impactstory      : # URL
+  orcid            : # URL
+  semantic         : # URL
+  pubmed           : # URL
+  researchgate     : # URL
+
+  # Repositories and software development
+  bitbucket        : # Username - Update with your username on the site
+  codepen          : # Username
+  dribbble         : # Username
+  github           : "tpark94"
+  kaggle           : # Username  
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+
+  # Social media
+  bluesky          : # Replace this with you Bluesky username
+  facebook         : # Username
+  flickr           : # Username
+  foursquare       : # Username
+  goodreads        : # Username
+  google_plus      : # Username
+  keybase          : # Username
+  instagram        : # Username
+  lastfm           : # Username
+  linkedin         : taehajeffpark
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       : # Username
+  steam            : # Username
+  telegram         : # URL
+  tumblr           : # Username
+  twitter          : # Username for X / Twitter
+  vine             : # Username
+  weibo            : # Username
+  wikipedia        : # Username
+  xing             : # Username
+  youtube          : # Username
+  zhihu            : # URL
+  curriculum-vitae_en : "/files/cv_taehapark_en_20240819.pdf"
+  curriculum-vitae_kr :
+
+# # Publication Category - The following the list of publication categories and their headings
+# publication_category:
+#   books:
+#     title: 'Books'
+#   manuscripts:
+#     title: 'Journal Articles'    
+#   conferences:
+#     title: 'Conference Papers'
+
+# Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -50,7 +118,9 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
+
 
 # SEO Related
 google_site_verification :
@@ -58,9 +128,10 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
+
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter
 facebook:
   username               :
   app_id                 :
@@ -76,50 +147,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
-
-
-# Site Author
-author:
-  name             : "Tae Ha \"Jeff\" Park"
-  avatar           : "profile.jpg"
-  bio              : "GN&C Research Engineer<br>NARA Space Technology"
-  location         : "Seoul, Korea"
-  employer         :
-  pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=fh3q6N4AAAAJ&hl=en"
-  email            : "thpark@naraspace.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : "tpark94"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : taehajeffpark
-  orcid            :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-  curriculum-vitae_en : "/files/cv_taehapark_en_20240819.pdf"
-  curriculum-vitae_kr :
 
 
 # Reading Files
@@ -178,7 +208,7 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
+# These settings control the types of collections used by the template
 collections:
   education:
     output: true
@@ -189,9 +219,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 
-# Defaults
+# These settings control how pages and collections are included in the site
 defaults:
   # _posts
   - scope:
@@ -247,6 +280,7 @@ defaults:
       author_profile: true
       share: true
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -257,7 +291,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
