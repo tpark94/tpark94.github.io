@@ -9,10 +9,10 @@ authors: "<b>Tae Ha Park</b>, Simone D'Amico"
 venue: "Journal of Spacecraft and Rockets (2024)"
 status: "https://img.shields.io/badge/Submitted-red"
 
-arxiv: "https://taehajeffpark.com/404.html"
+arxiv: "https://arxiv.org/abs/2409.11661"
 pdf:
 link:
 github:
-bibtex:
+bibtex: "/publications/preprints/2024_2_jsr/bibtex.txt"
 
 ---
