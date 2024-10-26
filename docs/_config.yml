@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Tae Ha \"Jeff\" Park"
+title                    : "Tae Ha 'Jeff' Park"
 title_separator          : "-"
-name                     : &name "Tae Ha \"Jeff\" Park"
+name                     : &name "Tae Ha 'Jeff' Park"
 description              : &description "Jeff's Personal Website"
 url                      : "https://taehajeffpark.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ repository               : "tpark94/tpark94.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Tae Ha \"Jeff\" Park"
+  name             : "Tae Ha 'Jeff' Park"
   pronouns         : # example: "she/her"
   bio              : "GN&C Research Engineer<br>Nara Space Technology"
   location         : "Seoul, Korea"
