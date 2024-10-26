@@ -12,6 +12,4 @@ title: "Student Researcher | Advisor: Dr. Philip D. Cha"
 misc: "<ul>
         <li> Developed a method to accelerate the modal convergence of the eigen-characteristics of uniform and non-uniform rods carrying various lumped attachments </li>
     </ul>"
-
-
 ---
