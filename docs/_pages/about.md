@@ -13,10 +13,12 @@ Previously I did my Ph.D. at the [Space Rendezvous Laboratory (SLAB)](https://sl
 
 ## News
 
+**2025/04/07** $~~~$ Our paper [Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap](https://www.sciencedirect.com/science/article/pii/S0273117723002284), published in the June 2024 issue of Advances in Space Research, received the [2024 COSPAR Outstanding Paper Award for Young Scientists](https://www.sciencedirect.com/journal/advances-in-space-research/about/news/cospar-outstanding-paper-award-for-young-scientists-papers-published-in-advances-in-space-research-in-2024)!
+
 **2024/07/15** $~~~$ I started working as a GN&C research engineer at [Nara Space Technology](https://naraspace.com) in Seoul, South Korea.
 
 **2024/06/05** $~~~$ My Ph.D. thesis [Robust machine learning for vision-based navigation about non-cooperative resident space objects](https://purl.stanford.edu/fk941fj3586) is now available online!
 
-**2024/04/21** $~~~$ Our paper [Satellite Pose Estimation Challenge: Dataset, Competition Design, and Results](https://ieeexplore.ieee.org/document/9076337), published in the October 2020 issue of the IEEE Transactions on Aerospace and Electronic Systems, received the [M. Barry Carlton Award](https://ieee-aess.org/awards/m-barry-carlton-award#description)!
+<!-- **2024/04/21** $~~~$ Our paper [Satellite Pose Estimation Challenge: Dataset, Competition Design, and Results](https://ieeexplore.ieee.org/document/9076337), published in the October 2020 issue of the IEEE Transactions on Aerospace and Electronic Systems, received the [M. Barry Carlton Award](https://ieee-aess.org/awards/m-barry-carlton-award#description)! -->
 
 <!-- **2024/01/29** $~~~$ Our paper [Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering](https://arxiv.org/abs/2309.11645) has been accepted to [ICRA 2024](https://2024.ieee-icra.org)! -->
