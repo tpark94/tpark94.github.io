@@ -1,9 +1,0 @@
-@misc{park2024spnv3,
-  title={Bridging Domain Gap for Flight-Ready Spaceborne Vision}, 
-  author={Tae Ha Park and Simone D'Amico},
-  year={2024},
-  eprint={2409.11661},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2409.11661}, 
-}
