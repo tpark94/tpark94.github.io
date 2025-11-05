@@ -13,11 +13,13 @@ Previously I did my Ph.D. at the [Space Rendezvous Laboratory (SLAB)](https://sl
 
 ## News
 
+**2025/09/22** $~~~$ Our paper [Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge](/files/papers/parkdamico_isparo2025_final.pdf) has been accepted at [2025 International Conference on Space Robotics (iSpaRo)](https://www.isparo.space). See you in Sendai, Japan!
+
 **2025/09/02** $~~~$ Our paper [Bridging the Domain Gap for Flight-Ready Spaceborne Vision](https://arxiv.org/abs/2409.11661) has been accepted to Journal of Spacecraft and Rockets!
 
 **2025/04/07** $~~~$ Our paper [Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap](https://www.sciencedirect.com/science/article/pii/S0273117723002284), published in the June 2024 issue of Advances in Space Research, received the [2024 COSPAR Outstanding Paper Award for Young Scientists](https://www.sciencedirect.com/journal/advances-in-space-research/about/news/cospar-outstanding-paper-award-for-young-scientists-papers-published-in-advances-in-space-research-in-2024)!
 
-**2024/07/15** $~~~$ I started working as a GN&C engineer at [Nara Space Technology Inc.](https://naraspace.com) in Seoul, South Korea.
+<!-- **2024/07/15** $~~~$ I started working as a GN&C engineer at [Nara Space Technology Inc.](https://naraspace.com) in Seoul, South Korea. -->
 
 <!-- **2024/06/05** $~~~$ My Ph.D. thesis [Robust machine learning for vision-based navigation about non-cooperative resident space objects](https://purl.stanford.edu/fk941fj3586) is now available online! -->
 
