@@ -7,15 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I'm a GN&C engineer at [Nara Space Technology Inc.](https://naraspace.com) in Seoul, South Korea.
+I'm a GN&C engineer at [Nara Space Technology Inc.](https://naraspace.com) in Seoul, South Korea, where I continue to research advanced AI and vision algorithms for vision-based Space Situational Awareness (SSA) and Rendezvous and Proximity Operations (RPO) with respect to non-cooperative resident space objects.
 
 Previously I did my Ph.D. at the [Space Rendezvous Laboratory (SLAB)](https://slab.stanford.edu) in the Department of Aeronautics & Astronautics at Stanford University advised by Dr. Simone D'Amico. There, my research covered the complete pipeline of machine learning development for spaceborne computer vision applications, from dataset generation and neural network design to on-ground validation and integration into GNC algorithms. Potential applications of my research include space situational awareness and logistics, such as active debris removal, inspection and refueling of defunct satellites.
 
 ## News
 
-**2025/09/22** $~~~$ Our paper [Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge](/files/papers/parkdamico_isparo2025_final.pdf) has been accepted at [2025 International Conference on Space Robotics (iSpaRo)](https://www.isparo.space). See you in Sendai, Japan!
+**2025/09/22** $~~~$ Our paper [Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge](https://arxiv.org/abs/2512.23998) has been accepted at [2025 International Conference on Space Robotics (iSpaRo)](https://www.isparo.space). See you in Sendai, Japan!
 
-**2025/09/02** $~~~$ Our paper [Bridging the Domain Gap for Flight-Ready Spaceborne Vision](https://arxiv.org/abs/2409.11661) has been accepted to Journal of Spacecraft and Rockets!
+**2025/09/02** $~~~$ Our paper [Bridging the Domain Gap for Flight-Ready Spaceborne Vision](https://arc.aiaa.org/doi/abs/10.2514/1.A36130) has been accepted to Journal of Spacecraft and Rockets!
 
 **2025/04/07** $~~~$ Our paper [Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap](https://www.sciencedirect.com/science/article/pii/S0273117723002284), published in the June 2024 issue of Advances in Space Research, received the [2024 COSPAR Outstanding Paper Award for Young Scientists](https://www.sciencedirect.com/journal/advances-in-space-research/about/news/cospar-outstanding-paper-award-for-young-scientists-papers-published-in-advances-in-space-research-in-2024)!
 

@@ -1,0 +1,9 @@
+@misc{park_2025_isparo,
+  title={Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge}, 
+  author={Park, Tae Ha and D’Amico, Simone},
+  year={2025},
+  eprint={2512.23998},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2512.23998},
+}
