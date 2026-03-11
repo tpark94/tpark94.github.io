@@ -13,16 +13,33 @@ Previously I did my Ph.D. at the [Space Rendezvous Laboratory (SLAB)](https://sl
 
 ## News
 
-**2025/09/22** $~~~$ Our paper [Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge](https://arxiv.org/abs/2512.23998) has been accepted at [2025 International Conference on Space Robotics (iSpaRo)](https://www.isparo.space). See you in Sendai, Japan!
-
-**2025/09/02** $~~~$ Our paper [Bridging the Domain Gap for Flight-Ready Spaceborne Vision](https://arc.aiaa.org/doi/abs/10.2514/1.A36130) has been accepted to Journal of Spacecraft and Rockets!
-
-**2025/04/07** $~~~$ Our paper [Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap](https://www.sciencedirect.com/science/article/pii/S0273117723002284), published in the June 2024 issue of Advances in Space Research, received the [2024 COSPAR Outstanding Paper Award for Young Scientists](https://www.sciencedirect.com/journal/advances-in-space-research/about/news/cospar-outstanding-paper-award-for-young-scientists-papers-published-in-advances-in-space-research-in-2024)!
-
-<!-- **2024/07/15** $~~~$ I started working as a GN&C engineer at [Nara Space Technology Inc.](https://naraspace.com) in Seoul, South Korea. -->
-
-<!-- **2024/06/05** $~~~$ My Ph.D. thesis [Robust machine learning for vision-based navigation about non-cooperative resident space objects](https://purl.stanford.edu/fk941fj3586) is now available online! -->
-
-<!-- **2024/04/21** $~~~$ Our paper [Satellite Pose Estimation Challenge: Dataset, Competition Design, and Results](https://ieeexplore.ieee.org/document/9076337), published in the October 2020 issue of the IEEE Transactions on Aerospace and Electronic Systems, received the [M. Barry Carlton Award](https://ieee-aess.org/awards/m-barry-carlton-award#description)! -->
-
-<!-- **2024/01/29** $~~~$ Our paper [Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering](https://arxiv.org/abs/2309.11645) has been accepted to [ICRA 2024](https://2024.ieee-icra.org)! -->
+<div class="news-timeline">
+  <div class="news-item">
+    <span class="news-date">2025/09/22</span>
+    <span class="news-content">Our paper <a href="https://arxiv.org/abs/2512.23998">Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge</a> has been accepted at <a href="https://www.isparo.space">2025 International Conference on Space Robotics (iSpaRo)</a>. See you in Sendai, Japan!</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2025/09/02</span>
+    <span class="news-content">Our paper <a href="https://arc.aiaa.org/doi/abs/10.2514/1.A36130">Bridging the Domain Gap for Flight-Ready Spaceborne Vision</a> has been accepted to Journal of Spacecraft and Rockets!</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2025/04/07</span>
+    <span class="news-content">Our paper <a href="https://www.sciencedirect.com/science/article/pii/S0273117723002284">Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap</a>, published in the June 2024 issue of Advances in Space Research, received the <a href="https://www.sciencedirect.com/journal/advances-in-space-research/about/news/cospar-outstanding-paper-award-for-young-scientists-papers-published-in-advances-in-space-research-in-2024">2024 COSPAR Outstanding Paper Award for Young Scientists</a>!</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2024/07/15</span>
+    <span class="news-content">I started working as a GN&C engineer at <a href="https://naraspace.com">Nara Space Technology Inc.</a> in Seoul, South Korea.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2024/06/05</span>
+    <span class="news-content">My Ph.D. thesis <a href="https://purl.stanford.edu/fk941fj3586">Robust machine learning for vision-based navigation about non-cooperative resident space objects</a> is now available online!</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2024/04/21</span>
+    <span class="news-content">Our paper <a href="https://ieeexplore.ieee.org/document/9076337">Satellite Pose Estimation Challenge: Dataset, Competition Design, and Results</a>, published in the October 2020 issue of the IEEE Transactions on Aerospace and Electronic Systems, received the <a href="https://ieee-aess.org/awards/m-barry-carlton-award#description">M. Barry Carlton Award</a>!</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2024/01/29</span>
+    <span class="news-content">Our paper <a href="https://arxiv.org/abs/2309.11645">Online Supervised Training of Spaceborne Vision during Proximity Operations using Adaptive Kalman Filtering</a> has been accepted to <a href="https://2024.ieee-icra.org">ICRA 2024</a>!</span>
+  </div>
+</div>

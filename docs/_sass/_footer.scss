@@ -15,21 +15,21 @@
   height: auto;
   /* sticky footer fix end */
   margin-top: 3em;
-  color: mix(#fff, $gray, 25%);
+  color: rgba(#fff, 0.6);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  background: $primary-color;
+  border-top: 3px solid $accent-color;
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding: 0 1em 1em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -37,11 +37,12 @@
   }
 
   a {
-    color: inherit;
+    color: $accent-color;
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      color: #fff;
+      text-decoration: none;
     }
   }
 
@@ -49,7 +50,7 @@
   .fab,
   .far,
   .fal {
-    color: mix(#fff, $gray, 25%);
+    color: rgba(#fff, 0.5);
   }
 }
 

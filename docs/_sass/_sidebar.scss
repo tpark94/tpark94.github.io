@@ -83,12 +83,15 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 200px;
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 4px;
+      border: 3px solid transparent;
+      background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, $accent-color, $accent-color-2);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
     }
   }
 }
@@ -118,7 +121,9 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .author__bio {
@@ -176,10 +181,11 @@
     display: block;
     position: relative;
     margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
+    padding: 1.2em;
+    border: 1px solid $border-color;
+    background: linear-gradient(135deg, #f8fafc, #f0f4ff);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   }
 
   &:before {

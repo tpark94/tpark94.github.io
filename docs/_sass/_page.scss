@@ -52,7 +52,20 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: none;
+    position: relative;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, $accent-color, $accent-color-2);
+      margin-top: 0.4em;
+      border-radius: 2px;
+    }
   }
 
   p, li, dl {

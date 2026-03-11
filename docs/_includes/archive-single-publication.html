@@ -23,59 +23,53 @@
       <!-- Paper venue + status -->
       <i>{{ post.venue }}</i>
       {% if post.status %}
-        <!-- {% case post.status %}
-          {% when "Submitted", "submitted" %}
-            <a href=""><img src="https://img.shields.io/badge/Submitted-red" /></a>
-          {% when "Accepted", "accepted" %}
-            <a href=""><img src="https://img.shields.io/badge/Accepted-blue" /></a>
-          {% when "In Press", "in press" %}
-            <a href=""><img src="https://img.shields.io/badge/In_Press-blueviolet" /></a>
-          {% when "Best Paper Award" %}
-            <a href=""><img src="https://img.shields.io/badge/Best_Paper_Award-success" /></a>
-        {% endcase %} -->
-        <a href=""><img src="{{ post.status }}"/></a>
+        <span class="pub-award"><i class="fas fa-trophy"></i> {{ post.status }}</span>
       {% endif %} <br>
 
       <!-- Links -->
       {% if post.project %}
-        <a href="{{ post.project }}" target="_blank">[project]</a>
+        <a href="{{ post.project }}" target="_blank" class="pub-badge pub-badge-project">project</a>
       {% endif %}
 
       {% if post.pdf %}
-        <a href="{{ post.pdf }}" target="_blank">[PDF]</a>
+        <a href="{{ post.pdf }}" target="_blank" class="pub-badge pub-badge-pdf">PDF</a>
       {% endif %}
 
       {% if post.arxiv %}
-        <a href="{{ post.arxiv }}" target="_blank">[arXiv]</a>
+        <a href="{{ post.arxiv }}" target="_blank" class="pub-badge pub-badge-arxiv">arXiv</a>
       {% endif %}
 
       {% if post.link %}
-        <a href="{{ post.link }}" target="_blank">[link]</a>
+        <a href="{{ post.link }}" target="_blank" class="pub-badge pub-badge-link">link</a>
       {% endif %}
 
       {% if post.correction %}
-        <a href="{{ post.correction }}" target="_blank">[correction]</a>
+        <a href="{{ post.correction }}" target="_blank" class="pub-badge pub-badge-correction">correction</a>
       {% endif %}
 
       {% if post.github %}
-        <a href="{{ post.github }}" target="_blank">[GitHub]</a>
+        <a href="{{ post.github }}" target="_blank" class="pub-badge pub-badge-github"><i class="fab fa-github"></i> GitHub</a>
       {% endif %}
 
       <!-- Datasets only -->
       {% if post.sdr %}
-        <a href="{{ post.sdr }}" target="_blank">[Stanford Digital Repository]</a>
+        <a href="{{ post.sdr }}" target="_blank" class="pub-badge pub-badge-data">Stanford Digital Repository</a>
       {% endif %}
 
       {% if post.zenodo %}
-        <a href="{{ post.zenodo }}" target="_blank">[Zenodo]</a>
+        <a href="{{ post.zenodo }}" target="_blank" class="pub-badge pub-badge-data">Zenodo</a>
       {% endif %}
       <!---->
 
       {% if post.bibtex %}
-        <a href="{{ post.bibtex | prepend: base_path }}" target="_blank">[BibTeX]</a>
+        <a href="javascript:void(0)" class="pub-badge pub-badge-bibtex" onclick="toggleBibtex(this)" data-bibtex-url="{{ post.bibtex | prepend: base_path }}">BibTeX</a>
       {% endif %}
 
       <br>
+      <div class="pub-bibtex-block" style="display:none;">
+        <button class="pub-bibtex-copy" onclick="copyBibtex(this)"><i class="fas fa-copy"></i><span class="pub-bibtex-copied">Copied!</span></button>
+        <pre><code></code></pre>
+      </div>
     </div>
 
   </article>

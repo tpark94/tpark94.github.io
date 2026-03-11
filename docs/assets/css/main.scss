@@ -39,3 +39,235 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* News timeline */
+.news-timeline {
+  border-left: 2px solid $primary-color;
+  padding-left: 0;
+  margin-left: 4px;
+  max-height: 280px;
+  overflow-y: auto;
+  position: relative;
+  mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+
+  &:hover {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1em;
+  padding: 0.75em 0 0.75em 1.25em;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 1.1em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $primary-color;
+  }
+
+  & + .news-item {
+    border-top: none;
+  }
+}
+
+.news-date {
+  font-size: $type-size-7;
+  font-weight: 600;
+  color: mix(#fff, $text-color, 30%);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding-top: 2px;
+}
+
+.news-content {
+  font-size: $type-size-6;
+  line-height: 1.5;
+}
+
+/* Publication award label */
+.pub-award {
+  display: inline-block;
+  font-size: $type-size-7;
+  font-weight: 700;
+  font-style: normal;
+  color: #92400e;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 0.15em 0.6em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+  vertical-align: middle;
+
+  .fa-trophy {
+    margin-right: 0.25em;
+    color: #d97706;
+  }
+}
+
+/* Publications tabs */
+.pub-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid mix(#fff, $text-color, 80%);
+  margin-bottom: 1.5em;
+}
+
+.pub-tab {
+  padding: 0.6em 1.25em;
+  font-size: $type-size-5;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  color: mix(#fff, $text-color, 40%);
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: $text-color;
+  }
+
+  &.active {
+    color: $primary-color;
+    border-bottom-color: $primary-color;
+  }
+}
+
+.pub-tab-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+/* Publications timeline */
+.pub-timeline {
+  border-left: 2px solid $primary-color;
+  margin-left: 4px;
+  padding-left: 0;
+  position: relative;
+}
+
+.pub-year-marker {
+  position: relative;
+  padding: 0.5em 0 0.25em 1.5em;
+  font-size: $type-size-5;
+  font-weight: 700;
+  color: $primary-color;
+  letter-spacing: 0.02em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0.85em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $primary-color;
+  }
+}
+
+.pub-timeline .list__item {
+  padding-left: 1.5em;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 1.5em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: mix(#fff, $primary-color, 50%);
+  }
+}
+
+/* Inline BibTeX block */
+.pub-bibtex-block {
+  margin-top: 0.5em;
+  position: relative;
+
+  .pub-bibtex-copy {
+    position: absolute;
+    top: 0.4em;
+    right: 0.4em;
+    padding: 0.3em 0.4em;
+    font-size: 1.1em;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    color: mix(#fff, $text-color, 30%);
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    .pub-bibtex-copied {
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-right: 0.4em;
+      font-size: $type-size-7;
+      font-weight: 600;
+      color: $primary-color;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      pointer-events: none;
+    }
+
+    &.copied .pub-bibtex-copied {
+      opacity: 1;
+    }
+  }
+
+  pre {
+    background: mix(#000, $background-color, 5%);
+    border: 1px solid mix(#fff, $text-color, 80%);
+    border-radius: 4px;
+    padding: 0.75em 1em;
+    overflow-x: auto;
+    margin: 0;
+  }
+
+  code {
+    font-size: $type-size-7;
+    line-height: 1.5;
+    color: $text-color;
+    background: none;
+    padding: 0;
+  }
+}
+
+/* Animated link underlines in page content */
+.page__content a:not(.pub-badge) {
+  text-decoration: none;
+  background-image: linear-gradient($accent-color, $accent-color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 1px;
+
+  &:hover {
+    background-size: 100% 2px;
+    text-decoration: none;
+  }
+}
