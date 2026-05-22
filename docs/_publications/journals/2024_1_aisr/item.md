@@ -7,7 +7,8 @@ teaser: "/publications/journals/2024_1_aisr/teaser.jpg"
 title: "Robust Multi-Task Learning and Online Refinement for Spacecraft Pose Estimation across Domain Gap"
 authors: "<b>Tae Ha Park</b>, Simone D'Amico"
 venue: "Advances in Space Research (2024)"
-status: "COSPAR Outstanding Paper Award for Young Scientists"
+award: "COSPAR Outstanding Paper Award for Young Scientists"
+status:
 
 arxiv: "https://arxiv.org/abs/2203.04275"
 pdf:

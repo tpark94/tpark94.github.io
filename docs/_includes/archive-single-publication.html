@@ -20,11 +20,34 @@
       <!-- Paper authors, my name in bold-->
       {{ post.authors }} <br>
 
-      <!-- Paper venue + status -->
-      <i>{{ post.venue }}</i>
-      {% if post.status %}
-        <span class="pub-award"><i class="fas fa-trophy"></i> {{ post.status }}</span>
-      {% endif %} <br>
+      <!-- Paper venue + award + status -->
+      {% assign status_lower = post.status | downcase %}
+      {% if status_lower contains "accept" %}
+        {% assign status_class = "pub-status-accepted" %}
+      {% elsif status_lower contains "submit" %}
+        {% assign status_class = "pub-status-submitted" %}
+      {% else %}
+        {% assign status_class = "pub-status-other" %}
+      {% endif %}
+
+      {% if post.venue2 %}
+        <i>{{ post.venue }}</i> <br>
+        <i>{{ post.venue2 }}</i>
+        {% if post.award %}
+          <span class="pub-award"><i class="fas fa-trophy"></i> {{ post.award }}</span>
+        {% endif %}
+        {% if post.status %}
+          <span class="{{ status_class }}">{{ post.status }}</span>
+        {% endif %} <br>
+      {% else %}
+        <i>{{ post.venue }}</i>
+        {% if post.award %}
+          <span class="pub-award"><i class="fas fa-trophy"></i> {{ post.award }}</span>
+        {% endif %}
+        {% if post.status %}
+          <span class="{{ status_class }}">{{ post.status }}</span>
+        {% endif %} <br>
+      {% endif %}
 
       <!-- Links -->
       {% if post.project %}
@@ -33,6 +56,10 @@
 
       {% if post.pdf %}
         <a href="{{ post.pdf }}" target="_blank" class="pub-badge pub-badge-pdf">PDF</a>
+      {% endif %}
+
+      {% if post.poster %}
+        <a href="{{ post.poster }}" target="_blank" class="pub-badge pub-badge-poster">poster</a>
       {% endif %}
 
       {% if post.arxiv %}

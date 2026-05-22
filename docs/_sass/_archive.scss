@@ -180,6 +180,10 @@
   background: $gray;
   &:hover { background: darken($gray, 10%); }
 }
+.pub-badge-poster {
+  background: #7c3aed;
+  &:hover { background: darken(#7c3aed, 8%); }
+}
 
 
 /*

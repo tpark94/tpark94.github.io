@@ -94,6 +94,33 @@
   line-height: 1.5;
 }
 
+/* Publication status labels */
+%pub-status-base {
+  display: inline-block;
+  font-size: $type-size-7;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.15em 0.6em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
+.pub-status-accepted {
+  @extend %pub-status-base;
+  color: #14532d;
+  background: #dcfce7;
+}
+.pub-status-submitted {
+  @extend %pub-status-base;
+  color: #1e3a5f;
+  background: #dbeafe;
+}
+.pub-status-other {
+  @extend %pub-status-base;
+  color: #374151;
+  background: #f3f4f6;
+}
+
 /* Publication award label */
 .pub-award {
   display: inline-block;
