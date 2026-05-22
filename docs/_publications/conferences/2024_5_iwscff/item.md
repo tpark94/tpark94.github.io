@@ -2,7 +2,7 @@
 collection: publications
 type: conference
 
-teaser: "/publications/conferences/2024_5_iwscff/teaser.pdf"
+teaser: "/publications/conferences/2024_5_iwscff/teaser.jpg"
 
 title: "Improving Zero-Shot Abstraction of Unknown Spacecraft 3D Shape as Primitive Assembly"
 authors: "<b>Tae Ha Park</b>, Emily Bates, Simone D'Amico"

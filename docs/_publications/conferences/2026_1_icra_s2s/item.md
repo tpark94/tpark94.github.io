@@ -2,7 +2,7 @@
 collection: publications
 type: conference
 
-teaser: "/publications/conferences/2026_1_icra_s2s/teaser.pdf"
+teaser: "/publications/conferences/2026_1_icra_s2s/teaser.jpg"
 
 title: "Rapid and Physically-Based Gaussian Splatting of Unknown Space Objects in Low Earth Orbit"
 authors: "<b>Tae Ha Park</b>"
