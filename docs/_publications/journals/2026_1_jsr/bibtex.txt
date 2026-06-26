@@ -1,0 +1,10 @@
+@article{park_2026_jsr_spnv3,
+    author = {Park, Tae Ha and D'Amico, Simone},
+    title = {Bridging the Domain Gap for Flight-Ready Spaceborne Vision},
+    journal = {Journal of Spacecraft and Rockets},
+    volume = {63},
+    number = {1},
+    pages = {289-307},
+    year = {2026},
+    doi = {10.2514/1.A36130},
+}

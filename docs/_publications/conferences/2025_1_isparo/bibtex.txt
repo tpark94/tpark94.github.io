@@ -1,9 +1,10 @@
-@misc{park_2025_isparo,
-  title={Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge}, 
-  author={Park, Tae Ha and D’Amico, Simone},
+@INPROCEEDINGS{park_2025_isparo_3dgs,
+  author={Park, Tae Ha and D'Amico, Simone},
+  booktitle={2025 International Conference on Space Robotics (iSpaRo)},
+  title={Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge},
   year={2025},
-  eprint={2512.23998},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2512.23998},
+  volume={},
+  number={},
+  pages={275-282},
+  doi={10.1109/iSpaRo66239.2025.11437016}
 }

@@ -8,7 +8,7 @@ title: "Rapid and Physically-Based Gaussian Splatting of Unknown Space Objects i
 authors: "<b>Tae Ha Park</b>"
 venue: "2026 International Conference on Robotics and Automation (ICRA) Workshop, Vienna, Austria (2026)"
 venue2: "From Sea to Space: Advancing Perception in Harsh Domains"
-status: "Accepted"
+status:
 award: "Spotlight"
 
 arxiv:
