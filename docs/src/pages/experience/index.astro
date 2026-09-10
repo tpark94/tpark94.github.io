@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CareerItem from '../../components/CareerItem.astro';
+
+const endValue = (value: string) =>
+  value === 'Current' ? Number.POSITIVE_INFINITY : Date.parse(value) || 0;
+const experience = (await getCollection('experience')).sort(
+  (a, b) => endValue(b.data.end) - endValue(a.data.end),
+);
+const education = (await getCollection('education')).sort(
+  (a, b) => endValue(b.data.end) - endValue(a.data.end),
+);
+---
+
+<BaseLayout
+  title="Experience & Education"
+  description="Experience and education of Tae-Ha Park."
+>
+  <main id="main-content" class="content page career-page" tabindex="-1">
+    <h1 class="sr-only">Experience & Education</h1>
+
+    <section class="timeline-section" aria-labelledby="experience-heading">
+      <h2 class="timeline-title" id="experience-heading">Experience</h2>
+      <div class="timeline">
+        {
+          experience.map(({ data }) => (
+            <CareerItem
+              heading={data.title}
+              organization={data.company}
+              location={data.address}
+              begin={data.begin}
+              end={data.end}
+              logo={data.teaser}
+              details={data.misc}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="timeline-section" aria-labelledby="education-heading">
+      <h2 class="timeline-title" id="education-heading">Education</h2>
+      <div class="timeline">
+        {
+          education.map(({ data }) => (
+            <CareerItem
+              heading={data.degree}
+              organization={data.school}
+              location={data.address}
+              begin={data.begin}
+              end={data.end}
+              logo={data.teaser}
+              details={data.misc}
+            />
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

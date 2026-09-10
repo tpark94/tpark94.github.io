@@ -1,0 +1,72 @@
+---
+import type { ImageMetadata } from 'astro';
+import { formatYearMonth } from '../utils/dates';
+
+interface Props {
+  heading: string;
+  organization: string;
+  location: string;
+  begin: string;
+  end: string;
+  logo?: string | string[];
+  details?: string;
+}
+
+const { heading, organization, location, begin, end, logo, details } =
+  Astro.props;
+const logoMetadata = import.meta.glob<ImageMetadata>(
+  '../../public/images/*.{png,jpg,jpeg,webp,avif,gif,svg}',
+  { eager: true, import: 'default' },
+);
+const logos = Array.isArray(logo) ? logo : logo ? [logo] : [];
+
+// Separate only explicitly labeled advisors; preserve their original wording.
+const advisorItem = /<li>\s*(Advisor:\s*.*?)\s*<\/li>/i;
+const headingAdvisor = heading.match(/^(.*?)\s*\|\s*(Advisor:\s*.+)$/);
+const detailsAdvisor = details?.match(advisorItem)?.[1];
+const advisor = headingAdvisor?.[2] ?? detailsAdvisor;
+const bullets = detailsAdvisor ? details?.replace(advisorItem, '') : details;
+
+// Decode the legacy text entity for display without changing the source file.
+const title = (headingAdvisor?.[1] ?? heading).replace(/&#38;/g, '&');
+---
+
+<article class="timeline-item">
+  <header class="timeline-item__header">
+    <div class="timeline-item__identity">
+      <h3>{title}</h3>
+      <p class="timeline-item__organization">{organization}</p>
+      {advisor && <p class="timeline-item__advisor">{advisor}</p>}
+    </div>
+    {
+      logos.length > 0 && (
+        <div class="timeline-item__logos">
+          {logos.map((src) => {
+            const dimensions = logoMetadata[`../../public${src}`];
+            return (
+              <img
+                class="timeline-item__logo"
+                src={src}
+                alt={`${organization} logo`}
+                width={dimensions?.width}
+                height={dimensions?.height}
+                loading="lazy"
+              />
+            );
+          })}
+        </div>
+      )
+    }
+  </header>
+  <dl class="timeline-item__facts">
+    <div>
+      <dt class="sr-only">Location</dt>
+      <dd>{location}</dd>
+    </div>
+    <div>
+      <dt class="sr-only">Dates</dt>
+      <dd>{formatYearMonth(begin)} — {formatYearMonth(end)}</dd>
+    </div>
+  </dl>
+  {bullets && <div class="timeline-item__details" set:html={bullets} />}
+</article>

@@ -1,0 +1,11 @@
+@inproceedings{park2020speedgan,
+	author={Park, Tae Ha and D'Amico, Simone}, 
+	booktitle={2020 AAS/AIAA Astrodynamics Specialist Conference, South Lake Tahoe, California}, 
+	title={Generative Model for Spacecraft Image Synthesis using Limited Dataset}, 
+	year={2020}, 
+	volume={}, 
+	number={}, 
+	pages={}, 
+	ISSN={}, 
+	month={August 9-13}
+}

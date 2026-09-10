@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const projects = await getCollection('projects');
+---
+
+<BaseLayout title="Projects" description="Research projects by Tae-Ha Park.">
+  <main id="main-content" class="content page" tabindex="-1">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p>Datasets and research tools for vision-based spacecraft autonomy.</p>
+    </header>
+    <section class="project-grid" aria-label="Projects">
+      {projects.map((entry) => <ProjectCard entry={entry} />)}
+    </section>
+  </main>
+</BaseLayout>

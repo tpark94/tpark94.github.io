@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "teaser": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "school": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "begin": {
+      "type": "string"
+    },
+    "end": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "string"
+    },
+    "misc": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "school",
+    "address",
+    "begin",
+    "end",
+    "degree"
+  ]
+}

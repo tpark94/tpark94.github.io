@@ -1,0 +1,102 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicationItem from '../../components/PublicationItem.astro';
+
+const publications = await getCollection('publications');
+const yearOf = (venue: string) =>
+  venue.match(/\b(20\d{2})\b/)?.[1] ?? 'Earlier';
+const grouped = publications.reduce<Record<string, typeof publications>>(
+  (groups, entry) => {
+    const year = yearOf(entry.data.venue);
+    (groups[year] ??= []).push(entry);
+    return groups;
+  },
+  {},
+);
+const orderedYears = Object.keys(grouped).sort((a, b) => {
+  if (a === 'Earlier') return 1;
+  if (b === 'Earlier') return -1;
+  return Number(b) - Number(a);
+});
+---
+
+<BaseLayout title="Publications" description="Publications by Tae-Ha Park.">
+  <main id="main-content" class="content page" tabindex="-1">
+    <header class="page-header">
+      <h1>Publications</h1>
+      <p>
+        Journal articles, conference papers, datasets, and dissertation work.
+      </p>
+    </header>
+    <div class="filters" role="group" aria-label="Filter publications by type">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="journal" aria-pressed="false"
+        >Journal</button
+      >
+      <button type="button" data-filter="conference" aria-pressed="false"
+        >Conference</button
+      >
+      <button type="button" data-filter="dataset" aria-pressed="false"
+        >Datasets</button
+      >
+      <button type="button" data-filter="thesis" aria-pressed="false"
+        >Thesis</button
+      >
+    </div>
+    {
+      orderedYears.map((year) => (
+        <section class="year-group" data-year-group>
+          <h2 class="year-heading">{year}</h2>
+          <div class="publication-list">
+            {grouped[year]?.map((entry) => (
+              <div data-publication-type={entry.data.type}>
+                <PublicationItem entry={entry} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </main>
+  <script>
+    const controls =
+      document.querySelectorAll<HTMLButtonElement>('[data-filter]');
+    const rows = document.querySelectorAll<HTMLElement>(
+      '[data-publication-type]',
+    );
+    const groups = document.querySelectorAll<HTMLElement>('[data-year-group]');
+    const filters = ['all', 'journal', 'conference', 'dataset', 'thesis'];
+    const setFilter = (filter: string, updateUrl = true) => {
+      controls.forEach((control) =>
+        control.setAttribute(
+          'aria-pressed',
+          String(control.dataset.filter === filter),
+        ),
+      );
+      rows.forEach((row) => {
+        row.hidden = filter !== 'all' && row.dataset.publicationType !== filter;
+      });
+      groups.forEach((group) => {
+        group.hidden = !Array.from(
+          group.querySelectorAll<HTMLElement>('[data-publication-type]'),
+        ).some((row) => !row.hidden);
+      });
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        filter === 'all'
+          ? url.searchParams.delete('type')
+          : url.searchParams.set('type', filter);
+        window.history.replaceState({}, '', url);
+      }
+    };
+    controls.forEach((control) =>
+      control.addEventListener('click', () =>
+        setFilter(control.dataset.filter || 'all'),
+      ),
+    );
+    const initialFilter =
+      new URLSearchParams(window.location.search).get('type') || 'all';
+    setFilter(filters.includes(initialFilter) ? initialFilter : 'all', false);
+  </script>
+</BaseLayout>

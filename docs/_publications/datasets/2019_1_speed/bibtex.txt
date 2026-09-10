@@ -1,8 +1,0 @@
-@misc{sharma2019speed,
-	author = {Sharma, Sumant and Park, Tae Ha and D'Amico, Sumant},
-	title = {Spacecraft Pose Estimation Dataset ({SPEED})},
-	howpublished = {Stanford Digital Repository.},
-    note={Available at: \url{https://purl.stanford.edu/dz692fn7184}},
-    doi={10.25740/dz692fn7184},
-    year = {2019}
-}

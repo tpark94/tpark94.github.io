@@ -1,16 +1,13 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
+# Generated Astro files
+.astro/
+dist/
 
 # Ignore the directory for local files during development
 local/
 
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ingore files created by npm
-node_modules
-package-lock.json
+# Existing npm exclusions
+node_modules/
+# package-lock.json
 
 # Custom
 .claude

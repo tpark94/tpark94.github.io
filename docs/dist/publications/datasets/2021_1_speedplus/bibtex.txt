@@ -1,0 +1,8 @@
+@misc{park2021speedplusdataset,
+	author={Park, Tae Ha and M{\"a}rtens, Marcus and Lecuyer, Gurvan and Izzo, Dario and D'Amico, Simone},
+	title={Next Generation Spacecraft Pose Estimation Dataset ({SPEED}+)},
+	howpublished={Stanford Digital Repository},
+	note={Available at \url{https://purl.stanford.edu/wv398fc4383}},
+	doi={10.25740/wv398fc4383},
+	year={2021}
+}

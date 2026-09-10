@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "teaser": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "company": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "begin": {
+      "type": "string"
+    },
+    "end": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "misc": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "company",
+    "address",
+    "begin",
+    "end",
+    "title"
+  ]
+}

@@ -1,7 +1,0 @@
-@INPROCEEDINGS{park_2024_iwscff,
-  author={Park, Tae Ha and Bates, Emily and D’Amico, Simone},
-  booktitle={12th International Workshop on Satellite Constellations & Formation Flying, Kaohsiung, Taiwan},
-  title={Improving Zero-Shot Abstraction of Unknown Spacecraft 3D Shape as Primitive Assembly},
-  year={2024},
-  month={December 2-4}
-}

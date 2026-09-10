@@ -1,0 +1,8 @@
+@inproceedings{park2022speedplus,
+	author={Park, Tae Ha and M{\"a}rtens, Marcus and Lecuyer, Gurvan and Izzo, Dario and D'Amico, Simone},
+	booktitle={2022 IEEE Aerospace Conference (AERO)},
+	title={{SPEED+}: Next-Generation Dataset for Spacecraft Pose Estimation across Domain Gap},
+	year={2022},
+	pages={1-15},
+	doi={10.1109/AERO53065.2022.9843439}
+}

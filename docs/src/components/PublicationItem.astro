@@ -1,0 +1,189 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatYearMonth } from '../utils/dates';
+
+const { entry } = Astro.props as { entry: CollectionEntry<'publications'> };
+const publication = entry.data;
+const citations = import.meta.glob<string>(
+  '../../public/publications/**/bibtex.txt',
+  { query: '?raw', import: 'default', eager: true },
+);
+const bibtex = publication.bibtex
+  ? citations[`../../public${publication.bibtex}`]
+  : undefined;
+if (publication.bibtex && bibtex === undefined) {
+  throw new Error(`Missing BibTeX file: ${publication.bibtex}`);
+}
+const bibtexId = `bibtex-${entry.id.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+const links = [
+  publication.pdf ? ['PDF', publication.pdf] : null,
+  publication.arxiv ? ['arXiv', publication.arxiv] : null,
+  publication.link ? ['Paper', publication.link] : null,
+  publication.github ? ['GitHub', publication.github] : null,
+  publication.project ? ['Project', publication.project] : null,
+  publication.poster ? ['Poster', publication.poster] : null,
+  publication.zenodo ? ['Data', publication.zenodo] : null,
+  publication.sdr ? ['Stanford Repository', publication.sdr] : null,
+  publication.correction ? ['Correction', publication.correction] : null,
+].filter((link): link is [string, string] => link !== null);
+---
+
+<article class="publication">
+  {
+    publication.teaser && (
+      <img
+        class="publication__teaser"
+        src={publication.teaser}
+        alt=""
+        width="320"
+        height="240"
+        loading="lazy"
+      />
+    )
+  }
+  <div class="publication__content">
+    <p class="eyebrow">{publication.type}</p>
+    <h2>{publication.title}</h2>
+    {
+      publication.award && (
+        <p class="award">
+          <svg
+            class="award__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            aria-hidden="true"
+          >
+            <path d="M8 3h8v6a4 4 0 0 1-8 0V3Z" />
+            <path d="M8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 13v5m-4 3v-3h8v3M6 21h12" />
+          </svg>
+          <span>{publication.award}</span>
+        </p>
+      )
+    }
+    <p class="publication__authors" set:html={publication.authors} />
+    <p class="publication__venue">
+      {formatYearMonth(publication.venue)}
+      {publication.venue2 && ` · ${formatYearMonth(publication.venue2)}`}
+    </p>
+    {
+      publication.status && (
+        <p class="publication__status">{publication.status}</p>
+      )
+    }
+    {
+      (links.length > 0 || bibtex !== undefined) && (
+        <div
+          class="publication__links"
+          aria-label={`Resources for ${publication.title}`}
+        >
+          {links.map(([label, href]) => (
+            <a
+              href={href}
+              target={href.startsWith('http') ? '_blank' : undefined}
+              rel={href.startsWith('http') ? 'noreferrer' : undefined}
+            >
+              {label === 'arXiv' && (
+                <i class="ai ai-arxiv" aria-hidden="true" />
+              )}
+              {label === 'GitHub' && (
+                <svg
+                  class="resource-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.55 9.55 0 0 1 12 6.8c.85 0 1.7.11 2.49.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.95.36.31.68.91.68 1.84v2.73c0 .26.18.57.69.48A10 10 0 0 0 12 2Z" />
+                </svg>
+              )}
+              {label}
+            </a>
+          ))}
+          {bibtex !== undefined && (
+            <button
+              type="button"
+              class="publication__bibtex-toggle"
+              data-bibtex-toggle
+              aria-expanded="false"
+              aria-controls={bibtexId}
+            >
+              <span class="resource-mark" aria-hidden="true">
+                B
+              </span>
+              BibTeX
+            </button>
+          )}
+        </div>
+      )
+    }
+    {
+      bibtex !== undefined && (
+        <section
+          class="publication__bibtex"
+          id={bibtexId}
+          aria-label={`BibTeX citation for ${publication.title}`}
+          hidden
+        >
+          <div class="publication__bibtex-toolbar">
+            <span>BibTeX</span>
+            <span class="publication__copy-status" role="status" />
+            <button type="button" data-bibtex-copy>
+              Copy
+            </button>
+          </div>
+          <pre
+            tabindex="0"
+            aria-label="Selectable BibTeX citation"
+            set:text={bibtex}
+          />
+        </section>
+      )
+    }
+  </div>
+</article>
+
+<script>
+  const bibtexToggles = document.querySelectorAll<HTMLButtonElement>(
+    '[data-bibtex-toggle]',
+  );
+  bibtexToggles.forEach((button) => {
+    const panel = document.getElementById(
+      button.getAttribute('aria-controls')!,
+    );
+    if (!panel) return;
+    button.addEventListener('click', () => {
+      const shouldOpen = panel.hidden;
+      bibtexToggles.forEach((toggle) => {
+        const otherPanel = document.getElementById(
+          toggle.getAttribute('aria-controls')!,
+        );
+        if (otherPanel) otherPanel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+      panel.hidden = !shouldOpen;
+      button.setAttribute('aria-expanded', String(shouldOpen));
+    });
+  });
+
+  document
+    .querySelectorAll<HTMLButtonElement>('[data-bibtex-copy]')
+    .forEach((button) => {
+      const panel = button.closest('.publication__bibtex')!;
+      const code = panel.querySelector('pre')!;
+      const status = panel.querySelector<HTMLElement>('[role="status"]')!;
+      button.addEventListener('click', async () => {
+        status.textContent = '';
+        try {
+          await navigator.clipboard.writeText(code.textContent ?? '');
+          status.textContent = 'Copied!';
+        } catch {
+          const range = document.createRange();
+          range.selectNodeContents(code);
+          const selection = window.getSelection();
+          selection?.removeAllRanges();
+          selection?.addRange(range);
+          status.textContent = 'Press Ctrl+C or ⌘C to copy the selected text.';
+        }
+      });
+    });
+</script>

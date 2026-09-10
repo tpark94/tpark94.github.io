@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { about } from '../data/about';
+import { formatYearMonth } from '../utils/dates';
+
+const publications = await getCollection('publications');
+const yearOf = (venue: string) =>
+  Number(venue.match(/\b(20\d{2})\b/)?.[1] ?? 0);
+const featuredPublications = publications
+  .sort((a, b) => yearOf(b.data.venue) - yearOf(a.data.venue))
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  <main id="main-content" class="content home-content" tabindex="-1">
+    <header class="page-header home-header">
+      <h1>{about.title}</h1>
+      <p set:html={about.introduction} />
+      <p set:html={about.background} />
+    </header>
+    <section
+      class="content-section featured-publications"
+      aria-labelledby="publications-heading"
+    >
+      <div class="section-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <a href="/publications/"
+          >All publications <span aria-hidden="true">→</span></a
+        >
+      </div>
+      <div class="featured-publications__grid">
+        {
+          featuredPublications.map((entry) => (
+            <a
+              class="featured-publication__link"
+              href={
+                entry.data.pdf ||
+                entry.data.link ||
+                entry.data.arxiv ||
+                '/publications/'
+              }
+              aria-label={entry.data.title}
+            >
+              <article class="featured-publication">
+                {entry.data.teaser && (
+                  <img
+                    src={entry.data.teaser}
+                    alt=""
+                    width="320"
+                    height="240"
+                    loading="lazy"
+                  />
+                )}
+                <p>{entry.data.type}</p>
+                <h3>{entry.data.title}</h3>
+                <span>{formatYearMonth(entry.data.venue)}</span>
+              </article>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

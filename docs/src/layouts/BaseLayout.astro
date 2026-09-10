@@ -1,0 +1,156 @@
+---
+import "../styles/global.css";
+import { news } from "../data/news";
+import { formatYearMonth, formatDatesInHtml } from "../utils/dates";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Tae Ha Park",
+  description = "Tae Ha Park — researcher in robotics, machine learning, and space systems.",
+} = Astro.props;
+const pageTitle = title === "Tae Ha Park" ? title : `${title} · Tae Ha Park`;
+const path = Astro.url.pathname;
+const nav = [
+  { href: "/experience/", label: "Experience" },
+  { href: "/publications/", label: "Publications" },
+  { href: "/projects/", label: "Projects" },
+];
+---
+
+<!doctype html>
+<html lang="en" style="color-scheme: dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#060911" />
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-shell site-header__inner">
+        <a class="wordmark" href="/">Tae Ha Park</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={path.startsWith(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell site-layout">
+      <slot />
+      <aside class="profile" aria-label="Profile">
+        <img
+          class="profile__photo"
+          src="/images/profile.jpg"
+          alt="Tae Ha Park"
+          width="320"
+          height="320"
+          fetchpriority="high"
+        />
+        <h2>Tae Ha "Jeff" Park</h2>
+        <p class="profile__role">GN&C Engineer<br />Nara Space</p>
+        <p class="profile__location">Seoul, Korea</p>
+        <div class="profile__links" aria-label="Profile links">
+          <a class="profile-link" href="mailto:thpark@naraspace.com"
+            ><svg
+              class="profile-link__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              ><path
+                d="M3 5h18v14H3V5Zm2 2v.3l7 5.25 7-5.25V7H5Zm14 10V9.8l-7 5.25-7-5.25V17h14Z"
+              ></path></svg
+            ><span>Email</span></a
+          >
+          <a
+            class="profile-link"
+            href="https://scholar.google.com/citations?user=fh3q6N4AAAAJ&hl=en"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="ai ai-google-scholar" aria-hidden="true"></i><span
+              >Google Scholar</span
+            ></a
+          >
+          <a
+            class="profile-link"
+            href="https://github.com/tpark94"
+            target="_blank"
+            rel="noreferrer"
+            ><svg
+              class="profile-link__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              ><path
+                d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.66 0 0 .84-.27 2.75 1.03A9.55 9.55 0 0 1 12 6.8c.85 0 1.7.11 2.49.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.66.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.95.36.31.68.91.68 1.84v2.73c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"
+              ></path></svg
+            ><span>GitHub</span></a
+          >
+          <a
+            class="profile-link"
+            href="https://www.linkedin.com/in/taehajeffpark"
+            target="_blank"
+            rel="noreferrer"
+            ><svg
+              class="profile-link__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              ><path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.03H3.54V8.99H7.1v11.46Z"
+              ></path></svg
+            ><span>LinkedIn</span></a
+          >
+          <a class="profile-link" href="/files/cv_taehapark_en.pdf"
+            ><svg
+              class="profile-link__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              ><path
+                d="M6 2h8l4 4v16H6V2Zm7 1.8V7h3.2L13 3.8ZM8.5 11h7v1.5h-7V11Zm0 3.2h7v1.5h-7v-1.5Zm0 3.2h4.5v1.5H8.5v-1.5Z"
+              ></path></svg
+            ><span>CV</span></a
+          >
+        </div>
+        <section class="rail-news" aria-labelledby="news-heading">
+          <h2 id="news-heading">News</h2>
+          <ul
+            class="rail-news__list"
+            tabindex="0"
+            aria-label="News. Scroll for older entries."
+          >
+            {
+              news.map(([date, text]) => (
+                <li>
+                  <>
+                    <time datetime={date.replaceAll('/', '-')}>
+                      {formatYearMonth(date)}
+                    </time>
+                    <span set:html={formatDatesInHtml(text)} />
+                  </>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="site-footer">
+      <div class="site-shell site-footer__inner">
+        <p>© {new Date().getFullYear()} Tae Ha Park</p>
+        <a href="mailto:thpark@naraspace.com">thpark@naraspace.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
