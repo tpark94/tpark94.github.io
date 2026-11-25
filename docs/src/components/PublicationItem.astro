@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { formatYearMonth } from '../utils/dates';
 
 const { entry } = Astro.props as { entry: CollectionEntry<'publications'> };
 const publication = entry.data;
@@ -64,8 +63,8 @@ const links = [
     }
     <p class="publication__authors" set:html={publication.authors} />
     <p class="publication__venue">
-      {formatYearMonth(publication.venue)}
-      {publication.venue2 && ` · ${formatYearMonth(publication.venue2)}`}
+      {publication.venue}
+      {publication.venue2 && ` · ${publication.venue2}`}
     </p>
     {
       publication.status && (

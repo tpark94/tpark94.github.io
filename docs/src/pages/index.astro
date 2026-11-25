@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { about } from '../data/about';
-import { formatYearMonth } from '../utils/dates';
 
 const publications = await getCollection('publications');
 const yearOf = (venue: string) =>
@@ -54,7 +53,7 @@ const featuredPublications = publications
                 )}
                 <p>{entry.data.type}</p>
                 <h3>{entry.data.title}</h3>
-                <span>{formatYearMonth(entry.data.venue)}</span>
+                <span>{entry.data.venue}</span>
               </article>
             </a>
           ))

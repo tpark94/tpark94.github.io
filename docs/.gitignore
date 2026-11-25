@@ -10,4 +10,7 @@ node_modules/
 # package-lock.json
 
 # Custom
+AGENTS.md
 .claude
+.impeccable/
+PRODUCT.md
